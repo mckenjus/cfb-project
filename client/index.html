@@ -7,15 +7,61 @@
     <title>Justin's CFB site</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script src="./cfb.js" defer></script>
-    <style>
-       
-    </style>
-</head>
+    <link rel="stylesheet" href="styles.css">
 <body>
+    <h1>Random Team</h1>
     <button id='random-team' href='/teams'>Random Team</button>
+    <div class="row">
+        <div class="column">
+          <div id='team' class="card">..</div>
+        </div>
+        <div class="column">
+          <div id='mascot' class="card">..</div>
+        </div>
+        <div class="column">
+          <div id='location' class="card">..</div>
+        </div>
+        <div class="column">
+          <div id='conference' class="card">..</div>
+        </div>
+      </div>
+    <h1>Random Stadium</h1>
     <button id='random-venue' href='/venues'>Random Stadium!</button>
+    <div class="row">
+        <div class="column">
+          <div id='name' class="card">..</div>
+        </div>
+        <div class="column">
+          <div id='city' class="card">..</div>
+        </div>
+        <div class="column">
+          <div id='state' class="card">..</div>
+        </div>
+        <div class="column">
+          <div id='capacity' class="card">..</div>
+        </div>
+        <div class="column">
+            <div id='constructed' class="card">..</div>
+          </div>
+      </div>
+    <h1>Random Joe</h1>
     <button id='randomPlayer' jref='/player'>Get a Random Joe</button>
-    <div id='response'>response</div>
-
+    <div class="row">
+        <div class="column">
+          <div id='joename' class="card">..</div>
+        </div>
+        <div class="column">
+          <div id='joeteam' class="card">..</div>
+        </div>
+        <div class="column">
+          <div id='position' class="card">..</div>
+        </div>
+        <div class="column">
+          <div id='jersey' class="card">..</div>
+        </div>
+        <div class="column">
+            <div id='hometown' class="card">..</div>
+          </div>
+      </div>
 </body>
 </html>
