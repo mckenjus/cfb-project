@@ -19,24 +19,14 @@ axios.get('https://api.collegefootballdata.com/teams/fbs?year=2021', {
   })
   .then((res) => {
     
-    //   console.log(res.data)
-  
     teamObj = res.data
     
     const myJSON = JSON.stringify(teamObj);  
        
-    
-    
   })
-  
-  
   .catch((error) => {
       console.error(error)
   })
-
-
-
-
 app.get('/teams' , (req,res)=>{
     let data1 = [`hello world`]
     let rand = Math.floor(Math.random()* Object.keys(teamObj).length)
@@ -53,13 +43,9 @@ app.get('/teams' , (req,res)=>{
     }
   })
   .then((res) => {
-    
-    //   console.log(res.data)
 
     venueObj = res.data
-    const myJSON = JSON.stringify(venueObj);
-    
-       
+    const myJSON = JSON.stringify(venueObj); 
     
     
   })
@@ -68,9 +54,6 @@ app.get('/teams' , (req,res)=>{
   .catch((error) => {
       console.error(error)
   })
-
-
-
 
 app.get('/venues' , (req,res)=>{
     let data1 = [`hello world`]
@@ -90,23 +73,12 @@ app.get('/venues' , (req,res)=>{
     })
     .then((res) => {
         
-        //   console.log(res.data)
-        
         joeObj = res.data
-        const myJSON = JSON.stringify(joeObj);
-        
-        
-        
-        
+  
     })
-    
-    
     .catch((error) => {
         console.error(error)
     })
-    
-    
-    
     
     app.get('/players' , (req,res)=>{
         let data3 = [`hello world`]
@@ -117,9 +89,7 @@ app.get('/venues' , (req,res)=>{
         data3 = joeObj[rand]
         res.send(data3); 
     })
-    
-    
-  
+
     app.get('/' , (req,res)=>{
      
        res.sendFile(); 

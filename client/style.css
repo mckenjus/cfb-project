@@ -3,11 +3,24 @@ h1{
 
 }
 #teamCard{
+    margin: auto;
     background-color: lightblue;
     align-content: center;
     text-align: center;
+    width: 50%;
 
 }
 #stadiumCard{
+    margin: auto;
     background-color: lightgrey;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+}
+#joeCard{
+    margin: auto;
+    background-color: lightblue;
+    align-content: center;
+    text-align: center;
+    width: 50%;
 }
