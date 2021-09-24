@@ -3,7 +3,7 @@ var path = require('path');
 const cors = require('cors')
 // const cfb = require('cfb.js');
 const app = express()
-const port = 3000
+const port = process.env.PORT||3001
 const axios = require('axios')
 app.use(cors());
 app.use(express.json());
@@ -96,5 +96,5 @@ app.get('/venues' , (req,res)=>{
     })
     
     app.listen(port, () => {
-        console.log(`Lab server listening at http://localhost:${port}`)
+        console.log(`Lab server listening at ${port}`)
     })
