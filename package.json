@@ -5,5 +5,25 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "json": "^11.0.0"
-  }
+  },
+  "name": "cfb-project",
+  "version": "1.0.0",
+  "main": "server/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mckenjus/cfb-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mckenjus/cfb-project/issues"
+  },
+  "homepage": "https://github.com/mckenjus/cfb-project#readme",
+  "description": ""
 }
